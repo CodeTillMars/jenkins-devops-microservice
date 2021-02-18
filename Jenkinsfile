@@ -15,13 +15,13 @@
 
 pipeline {	
 	//agent any
-	agent {docker {image 'maven:3.6.3'}}
+	agent { docker {image 'maven:3.6.3'}}
 
 	stages{
 		stage('Build'){
 		steps{
 			sh "mvn --version"
-		echo "Build"
+			echo "Build"
 			}
 		}
 		stage('Test'){
@@ -46,7 +46,7 @@ pipeline {
 			echo 'I run  when you  are successful'
 		}
 		failure{
-			echo 'I run when you ar enot successful'
+			echo 'I run when you are not successful'
 		}
 
 
