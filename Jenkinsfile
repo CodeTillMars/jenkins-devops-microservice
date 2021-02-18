@@ -15,7 +15,7 @@
 
 pipeline {	
 	//agent any
-	agent { docker {image 'image:codetillmars/hello-world-java:0.0.1 RELEASE'}}
+	agent { docker {image 'image:codetillmars/hello-world-java:0.0.2.RELEASE'}}
 
 	stages{
 		stage('Build'){
